@@ -22,11 +22,12 @@ hr.content-divider {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(https://c8.alamy.com/compes/mayk14/fondo-de-textura-de-madera-blanca-nos-utilice-madera-limpios-para-el-telon-de-fondo-del-diseno-de-fondo-mayk14.jpg);
-}
+	background-image: url(https://fondosmil.com/fondo/3178.png);
+	background: linear-gradient(rgba(31, 44, 108, 0.65), rgba(31, 44, 108, 0.65)),
+		rgba(0, 0, 0, 0.55) url("https://fondosmil.com/fondo/3178.png") no-repeat;
 
-#parallax-1 hr {
-	background: coral;
+	box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	font-family: "Poppins", sans-serif;
 }
 
 #parallax-2 {
@@ -35,10 +36,6 @@ hr.content-divider {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#parallax-2 hr {
-	background: yellow;
 }
 
 .label {
@@ -106,4 +103,47 @@ ul li a:hover {
 }
 .is-shady:hover {
 	box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+
+.button-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+.has-vertically-aligned-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Poppins", Lato, Tahoma, sans-serif;
+	width: 100%;
+	min-height: 100%;
+}
+.header-wrapper {
+	padding-bottom: 30px;
+}
+
+#parallax-1 .title {
+	font-family: "Kaushan Script", sans-serif;
+	transform: rotate(-5deg);
+	font-size: 5rem;
+	color: whitesmoke;
+}
+#parallax-1 .subtitle {
+	padding: 5px;
+	color: whitesmoke;
+}
+#parallax-1 .profession {
+	padding-top: 50px;
+	font-size: 1.7rem;
+	text-transform: uppercase;
 }
