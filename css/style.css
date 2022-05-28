@@ -147,3 +147,31 @@ html {
 	font-size: 1.7rem;
 	text-transform: uppercase;
 }
+.sectioneight {
+	padding: 0px 0 50px;
+	background: #272844;
+}
+.widgets p {
+	padding-top: opx;
+	padding-bottom: 25px;
+	color: #fff;
+}
+.widgets h4 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	color: #fff;
+}
+.widgets > img {
+	padding-bottom: 15px;
+}
+.widgets li {
+	color: #fff;
+	font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+	.widgets {
+		padding: 0 15px;
+	}
+}

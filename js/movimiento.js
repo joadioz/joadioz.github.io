@@ -4,6 +4,7 @@ const cardSteam = document.getElementById("steam-bot");
 // Funcion que cambia el contenido del contenedor
 const contenido = "hola";
 function cambiarContenido(contenido) {
+	contenidoViejo = contenedor.innerHTML; 
 	contenedor.innerHTML = contenido;
 }
 // funcion que se activa al dar click
