@@ -1,0 +1,77 @@
+.accordion {
+	margin: 3em auto;
+	max-width: 30em;
+}
+.accordion .accordion-toggle {
+	display: none;
+}
+.accordion .accordion-option {
+	position: relative;
+	margin-bottom: 1em;
+	background: rgba(17, 149, 247, 0.08);
+	border: 1px solid rgba(0, 83, 251, 0.5);
+	-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5),
+		0 0 25px 0 rgba(18, 60, 255, 0.16);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 0 25px 0 rgba(18, 60, 255, 0.16);
+}
+.accordion .accordion-option .accordion-title,
+.accordion .accordion-option .accordion-content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.accordion .accordion-option .accordion-title {
+	padding: 1em;
+	display: block;
+	color: black;
+	font-family: "Cabin", sans-serif;
+	font-weight: 500;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+.accordion .accordion-option .accordion-title:after,
+.accordion .accordion-option .accordion-title:before {
+	content: "";
+	position: absolute;
+	right: 1.25em;
+	top: 1.25em;
+	width: 2px;
+	height: 0.75em;
+	background: #7f00ff;
+
+	background: linear-gradient(to right, #7f00ff, #3f00fc) !important;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.accordion .accordion-option .accordion-title:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.accordion .accordion-option .accordion-content {
+	max-height: 0;
+	overflow: hidden;
+}
+.accordion .accordion-option .accordion-content p {
+	margin: 0;
+	padding: 0.5em 1em 1em;
+	font-size: 0.9em;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.9);
+}
+.accordion
+	.accordion-option
+	.accordion-toggle:checked
+	+ .accordion-title
+	+ .accordion-content {
+	max-height: 500px;
+}
+.accordion
+	.accordion-option
+	.accordion-toggle:checked
+	+ .accordion-title:before {
+	-webkit-transform: rotate(90deg) !important;
+	transform: rotate(90deg) !important;
+}

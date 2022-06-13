@@ -1,12 +1,15 @@
-.title {
-	color: white;
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+
+#parallax-1 .title {
+	font-family: "Kaushan Script", sans-serif;
+	transform: rotate(-5deg);
 	font-weight: 800;
-	font-size: 4rem;
-	font-family: "Nunito Sans", sans-serif;
+	font-size: 5rem;
+	color: whitesmoke;
 	text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
 }
 
-.subtitle {
+#parallax-1 .subtitle {
 	color: white;
 	font-size: 1.2rem;
 	text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
@@ -31,7 +34,7 @@ hr.content-divider {
 }
 
 #parallax-2 {
-	background: url(https://c8.alamy.com/compes/mayk14/fondo-de-textura-de-madera-blanca-nos-utilice-madera-limpios-para-el-telon-de-fondo-del-diseno-de-fondo-mayk14.jpg);
+	/* background: url(https://c8.alamy.com/compes/mayk14/fondo-de-textura-de-madera-blanca-nos-utilice-madera-limpios-para-el-telon-de-fondo-del-diseno-de-fondo-mayk14.jpg); */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -132,12 +135,6 @@ html {
 	padding-bottom: 30px;
 }
 
-#parallax-1 .title {
-	font-family: "Kaushan Script", sans-serif;
-	transform: rotate(-5deg);
-	font-size: 5rem;
-	color: whitesmoke;
-}
 #parallax-1 .subtitle {
 	padding: 5px;
 	color: whitesmoke;
@@ -147,31 +144,65 @@ html {
 	font-size: 1.7rem;
 	text-transform: uppercase;
 }
-.sectioneight {
-	padding: 0px 0 50px;
-	background: #272844;
+
+.steam-primera-idea {
+	background-color: #f0f3f5;
+	padding: 3rem;
 }
-.widgets p {
-	padding-top: opx;
-	padding-bottom: 25px;
-	color: #fff;
+.steam-segunda-idea {
+	background-color: #d7ecf9;
+	padding: 3rem;
+
+	/* background: linear-gradient(rgba(31, 44, 108, 0.65), rgba(31, 44, 108, 0.65)),
+		rgba(0, 0, 0, 0.55); */
 }
-.widgets h4 {
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 12px;
-	color: #fff;
+.steam-tercera-idea {
+	background-color: #f0f3f5;
+	padding: 3rem;
 }
-.widgets > img {
-	padding-bottom: 15px;
+.steam-cuarta-idea {
+	background-color: #d7ecf9;
+	padding: 3rem;
 }
-.widgets li {
-	color: #fff;
-	font-weight: 400;
+.steam-primera-idea img {
+	height: 150px;
 }
-@media screen and (max-width: 768px) {
-	.widgets {
-		padding: 0 15px;
+.steam-segunda-idea img {
+	height: 280px;
+}
+.steam-tercera-idea img {
+	height: 390px;
+}
+.steam-cuarta-idea img {
+	height: 390px;
+}
+
+#up {
+	height: 15px;
+	transform: rotate(-90deg);
+}
+
+.universo-primera-idea {
+	background-color: #f0f3f5;
+}
+
+@media (max-width: 1170px) {
+	.universo-primera-idea img {
+		padding-top: 3rem;
 	}
+}
+@media (max-width: 890px) {
+	.universo-primera-idea img {
+		padding-top: 4.6rem;
+	}
+}
+@media (max-width: 768px) {
+	.universo-primera-idea img {
+		height: 200px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+}
+.universo-segunda-idea {
+	background-color: #d7ecf9;
 }
