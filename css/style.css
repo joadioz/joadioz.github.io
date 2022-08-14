@@ -149,7 +149,7 @@ html {
 	background-color: #f0f3f5;
 	padding: 3rem;
 }
-.steam-segunda-idea {
+.steam-tercera-idea {
 	background-color: #d7ecf9;
 	padding: 3rem;
 
@@ -167,7 +167,7 @@ html {
 .steam-primera-idea img {
 	height: 150px;
 }
-.steam-segunda-idea img {
+.steam-tercera-idea img {
 	height: 280px;
 }
 .steam-tercera-idea img {
@@ -205,4 +205,60 @@ html {
 }
 .universo-segunda-idea {
 	background-color: #d7ecf9;
+}
+.universo-tercera-idea {
+	background-color: #f0f3f5;
+}
+.universo-tercera-idea img {
+	height: 8rem;
+}
+@media (max-width: 768px) {
+	.universo-tercera-idea img {
+		height: 5rem;
+	}
+}
+.pulsar {
+	width: 9rem;
+	border-radius: 1900px;
+}
+
+.universo-cuarta-idea {
+	background-color: #f0f3f5;
+}
+.universo-quinta-idea {
+	background-color: #d7ecf9;
+}
+.universo-quinta-idea img {
+	height: 100px;
+}
+
+.explicacion {
+	padding: 3rem;
+	background-color: rgb(243, 243, 243);
+	border-radius: 10px;
+	box-shadow: 0px 0px 1px 1px #060504;
+}
+.steam-segunda-idea {
+	background-color: rgb(247, 247, 247);
+}
+.steam-segunda-idea img {
+	height: 15rem;
+}
+.steam-segunda-idea {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.steam-segunda-idea .content {
+	margin-top: 3rem;
+}
+
+@media (max-width: 1860px) {
+	.steam-segunda-idea img {
+		margin-top: 3rem;
+	}
+}
+#todo {
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: #f1f1f1;
 }

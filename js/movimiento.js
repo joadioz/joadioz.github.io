@@ -1,10 +1,11 @@
 const contenedor = document.getElementById("cambiante");
 const steamBotButton = document.getElementById("steam-bot-button");
 const buttonTrabajo = document.getElementById("button-trabajo");
-const steamBot = document.getElementById("steam-bot");
-contenedorOriginal = contenedor.innerHTML;
+const steamBotContenedor = document.getElementById("steam-bot-contenedor");
 const eliminarInfo = document.getElementById("eliminar-info");
 const parallax1 = document.getElementById("parallax-1");
+const universoContenedor = document.getElementById("universo-contenedor");
+const buttonUniverso = document.getElementById("universo-button");
 
 // Funcion que cambia el contenido del contenedor
 
@@ -15,14 +16,26 @@ function esconderContenedor() {
 		contenedor.classList.remove("is-hidden");
 		contenedor.classList.remove("desaparecer");
 		contenedor.classList.add("aparecer");
-		steamBot.className += " is-hidden";
+		if (!steamBotContenedor.classList.contains("is-hidden")) {
+			steamBotContenedor.className += " is-hidden";
+		}
+		if (!universoContenedor.classList.contains("is-hidden")) {
+			universoContenedor.className += " is-hidden";
+		}
 	}
+}
+function mostrarUniverso() {
+	contenedor.classList.add("desaparecer");
+	setTimeout(function () {
+		contenedor.className += " is-hidden";
+		universoContenedor.classList.remove("is-hidden");
+	}, 500);
 }
 function mostrarSteam() {
 	contenedor.classList.add("desaparecer");
 	setTimeout(function () {
 		contenedor.className += " is-hidden";
-		steamBot.classList.remove("is-hidden");
+		steamBotContenedor.classList.remove("is-hidden");
 	}, 500);
 }
 function ocultarInfo() {
@@ -36,3 +49,4 @@ function ocultarInfo() {
 buttonTrabajo.addEventListener("click", esconderContenedor);
 steamBotButton.addEventListener("click", mostrarSteam);
 eliminarInfo.addEventListener("click", ocultarInfo);
+buttonUniverso.addEventListener("click", mostrarUniverso);
